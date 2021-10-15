@@ -20,6 +20,8 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.24722222222222223" />
         <entry key="app/src/main/res/layout/activity_sample2.xml" value="0.29375" />
         <entry key="app/src/main/res/layout/activity_samples.xml" value="0.29375" />
+        <entry key="app/src/main/res/layout/content_samples.xml" value="0.1111111111111111" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.34010416666666665" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.359375" />
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.29375" />
         <entry key="app/src/main/res/layout/toolbar_carousel.xml" value="0.24722222222222223" />
