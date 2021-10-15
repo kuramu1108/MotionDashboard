@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/weather_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/outline_bg"
+    app:layoutDescription="@xml/weather_module_scene">
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Fukuoka City, Hakata"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temperature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="27°"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_text" />
+
+    <ImageView
+        android:id="@+id/weather_today"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_wb_sunny_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/day_temperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:justifyContent="space_between"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_today">
+
+        <include layout="@layout/weather_item" />
+
+        <include layout="@layout/weather_item" />
+
+        <include layout="@layout/weather_item" />
+
+        <include layout="@layout/weather_item" />
+
+        <include layout="@layout/weather_item" />
+
+        <include layout="@layout/weather_item" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <LinearLayout
+        android:id="@+id/week_weather"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="32dp"
+        app:layout_constraintTop_toBottomOf="@id/day_temperature">
+
+        <include layout="@layout/weather_item_2" />
+
+        <include layout="@layout/weather_item_2" />
+
+        <include layout="@layout/weather_item_2" />
+
+        <include layout="@layout/weather_item_2" />
+
+        <include layout="@layout/weather_item_2" />
+
+        <include layout="@layout/weather_item_2" />
+
+        <include layout="@layout/weather_item_2" />
+
+        <include layout="@layout/weather_item_2" />
+    </LinearLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>

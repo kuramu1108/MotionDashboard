@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_motion_layout"
+    app:layoutDescription="@xml/activity_main_scene"
+    app:motionDebug="SHOW_ALL"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar_carousel"
+        layout="@layout/toolbar_carousel"
+        android:layout_width="84dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="MotionDashboard"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:transformPivotX="10dp"
+        android:transformPivotY="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/weather_module"
+        layout="@layout/weather_module"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="64dp"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/setting_fragment_container"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:elevation="24dp"
+        android:background="@drawable/setting_fragment_bg" />
+
+    <FrameLayout
+        android:id="@+id/left_panel_container"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/left_panel_bg"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/left_panel_arrow"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="128dp"
+        android:scaleType="fitStart"
+        android:elevation="8dp"
+        android:src="@drawable/ic_triangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/left_panel_container" />
+
+    <ImageView
+        android:id="@+id/setting_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="setting"
+        android:elevation="32dp"
+        android:src="@drawable/ic_outline_settings_24"
+        tools:layout_editor_absoluteX="375dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="close"
+        android:elevation="32dp"
+        android:src="@drawable/ic_baseline_close_24"
+        tools:layout_editor_absoluteX="375dp"
+        tools:layout_editor_absoluteY="12dp" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

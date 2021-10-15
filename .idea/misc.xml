@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/compose-model-1634176345958.xml" value="0.2964527027027027" />
+        <entry key="../../../../layout/compose-model-1634176833018.xml" value="0.2972972972972973" />
+        <entry key="../../../../layout/compose-model-1634280185998.xml" value="0.3120777027027027" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.35625" />
+        <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.35625" />
+        <entry key="app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/drawable/ic_outline_settings_24.xml" value="0.35625" />
+        <entry key="app/src/main/res/drawable/ic_triangle.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/drawable/ic_triangle_white.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/drawable/left_panel_bg.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/drawable/outline_Bg.xml" value="0.35625" />
+        <entry key="app/src/main/res/drawable/outline_bg.xml" value="0.35625" />
+        <entry key="app/src/main/res/drawable/placeholder_bg.xml" value="0.30572916666666666" />
+        <entry key="app/src/main/res/drawable/setting_fragment_bg.xml" value="0.5838541666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24722222222222223" />
+        <entry key="app/src/main/res/layout/activity_sample2.xml" value="0.29375" />
+        <entry key="app/src/main/res/layout/activity_samples.xml" value="0.29375" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.359375" />
+        <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.29375" />
+        <entry key="app/src/main/res/layout/toolbar_carousel.xml" value="0.24722222222222223" />
+        <entry key="app/src/main/res/layout/weather_item.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/weather_item_2.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/weather_module.xml" value="0.28958333333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
